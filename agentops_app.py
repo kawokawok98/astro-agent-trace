@@ -291,4 +291,8 @@ def health():
 
 if __name__ == "__main__":
     import uvicorn
+<<<<<<< HEAD
     uvicorn.run("agentops_app:app", host="0.0.0.0", port=8000, reload=True)
+=======
+    uvicorn.run("agentops_app:app", host="0.0.0.0", port=8000, reload=True)
+>>>>>>> 47dda19af3be4bedf47dc295e51bb23aa7fffc1f
