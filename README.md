@@ -1,35 +1,37 @@
-# AgentTrace v1.1
+# AstroAgentTrace
 
-**Zero-dep REST API for LLM agent observability.** 
-Register → Run → Metrics. No DBs, no SDKs. Prod-ready tracing in minutes.
+A simple, single-file observability tool for AI agents.
 
-[![Demo](https://via.placeholder.com/800x400?text=AgentTrace+v1.1)](https://python-tool--kawokawok98.replit.app/)
- 
+Lightweight REST API • Span/trace support • Zero dependencies.
 
-## Why AgentTrace?
-LLM agents need tracing. Traditional APM misses token variance, multi-step spans, probabilistic outputs. AgentTrace gives you:
+### Live Demo
+https://python-tool--kawokawok98.replit.app
 
-- Success rates, p95 latency, token usage — computed inline
-- Span tracing for tool calls and reasoning chains
-- Pure HTTP/JSON — works in any language
-- In-memory store (Redis optional for prod)
-
-## Quickstart (60s)
+### Quick start
 
 ```bash
-# Docker or Replit
-docker run -p 8080:8080 kawokawok98/agenttrace:v1.1
+git clone https://github.com/kawokawok98/astro-agent-trace.git
+cd astro-agent-trace
 
-# 1. Register agent
-curl -X POST http://localhost:8080/register -d '{"name":"my-agent"}'
+docker build -t astro-trace .
+docker run -p 8000:8000 -v $(pwd)/data:/app astro-trace
+Test it:
+Bashcurl -X POST http://localhost:8000/run \
+  -H "X-API-Key: demo-key-for-github" \
+  -H "Content-Type: application/json" \
+  -d '{"input": {"message": "hello"}}'
+Check data at:
+http://localhost:8000/traces
+http://localhost:8000/stats
+http://localhost:8000/metrics
+Features
 
-# 2. Create run  
-RUN_ID=$(curl -s -X POST http://localhost:8080/runs \
-  -d '{"agent_id":1,"input":"2+2?"}' | jq -r '.run_id')
+Agent run logging
+Trace + span hierarchy
+Token usage and basic cost tracking
+Prometheus metrics endpoint
+API key auth + CORS
+Basic LangChain callback support
 
-# 3. Log results
-curl -X PATCH http://localhost:8080/runs/$RUN_ID \
-  -d '{"output":"4","success":true,"latency_ms":250}'
-
-# 4. Metrics!
-curl http://localhost:8080/metrics/1 | jq
+ MIT licensed.
+Thanks for checking it out - tmk
