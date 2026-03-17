@@ -1,13 +1,10 @@
-# astro-agent-trace v1.0
-Lightweight self-hostable AI agent tracing
- topics: fastapi  observability  llm  agents  opentelemetry prometheus
 # AgentTrace v1.1
 
 **Zero-dep REST API for LLM agent observability.** 
 Register → Run → Metrics. No DBs, no SDKs. Prod-ready tracing in minutes.
 
 [![Demo](https://via.placeholder.com/800x400?text=AgentTrace+v1.1)](https://python-tool--kawokawok98.replit.app/)
-  **Built solo during ides of march bender™**
+ 
 
 ## Why AgentTrace?
 LLM agents need tracing. Traditional APM misses token variance, multi-step spans, probabilistic outputs. AgentTrace gives you:
