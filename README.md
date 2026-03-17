@@ -7,7 +7,7 @@ Lightweight self-hostable AI agent tracing
 Register → Run → Metrics. No DBs, no SDKs. Prod-ready tracing in minutes.
 
 [![Demo](https://via.placeholder.com/800x400?text=AgentTrace+v1.1)](https://python-tool--kawokawok98.replit.app/)
-⭐ **Built solo during IdEs Of MaRcH bEnDeR™**
+  **Built solo during IdEs Of MaRcH bEnDeR™**
 
 ## Why AgentTrace?
 LLM agents need tracing that doesn't suck. Traditional APM misses token variance, multi-step spans, probabilistic outputs. AgentTrace gives you:
@@ -17,7 +17,7 @@ LLM agents need tracing that doesn't suck. Traditional APM misses token variance
 - Pure HTTP/JSON — works in any language
 - In-memory store (Redis optional for prod)
 
-## 🚀 Quickstart (60s)
+## Quickstart (60s)
 
 ```bash
 # Docker or Replit
