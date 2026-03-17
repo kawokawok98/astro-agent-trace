@@ -7,10 +7,10 @@ Lightweight self-hostable AI agent tracing
 Register → Run → Metrics. No DBs, no SDKs. Prod-ready tracing in minutes.
 
 [![Demo](https://via.placeholder.com/800x400?text=AgentTrace+v1.1)](https://python-tool--kawokawok98.replit.app/)
-  **Built solo during IdEs Of MaRcH bEnDeR™**
+  **Built solo during ides of march bender™**
 
 ## Why AgentTrace?
-LLM agents need tracing that doesn't suck. Traditional APM misses token variance, multi-step spans, probabilistic outputs. AgentTrace gives you:
+LLM agents need tracing. Traditional APM misses token variance, multi-step spans, probabilistic outputs. AgentTrace gives you:
 
 - Success rates, p95 latency, token usage — computed inline
 - Span tracing for tool calls and reasoning chains
