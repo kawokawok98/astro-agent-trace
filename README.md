@@ -35,3 +35,4 @@ Basic LangChain callback support
 
  MIT licensed.
 Thanks for checking it out - tmk
+Enterprise commercial license & support available — DM @kawokawok98 on X
