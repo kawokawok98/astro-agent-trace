@@ -2,7 +2,7 @@
 
 A simple, single-file observability tool for AI agents. 
 
-Lightweight REST API • Span/trace support • Zero dependencies.
+Lightweight REST API • Span/trace support • Zero dependencies. **For CrewAI • LangChain • AutoGPT • MetaGPT • Custom agents** — Complete visibility into agent decisions, errors, token usage, and costs.
 
 Scale notes: SQLite handles 10k–500k agents comfortably. Postgres migration script included for larger fleets.
 
@@ -31,14 +31,4 @@ http://localhost:8000/traces
 http://localhost:8000/stats
 http://localhost:8000/metrics
 Features
-
-Agent run logging
-Trace + span hierarchy
-Token usage and basic cost tracking
-Prometheus metrics endpoint
-API key auth + CORS
-Basic LangChain callback support
-
- MIT licensed.
-Thanks for checking it out - Thomas
 
