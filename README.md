@@ -1,12 +1,14 @@
 # AstroAgentTrace
 
-A simple, single-file observability tool for AI agents. — perfect bolt-on for Datadog / Snowflake observability stacks. Enterprise commercial license & pricing available — DM @kawokawok98 on X
+A simple, single-file observability tool for AI agents. 
 
 Lightweight REST API • Span/trace support • Zero dependencies.
 
 Scale notes: SQLite handles 10k–500k agents comfortably. Postgres migration script included for larger fleets.
 
 Step-by-step span logging: every agent action (preprocess → llm.call → postprocess) visible in one click for debugging & audit.
+
+perfect bolt-on for Datadog / Snowflake observability stacks. Enterprise commercial license & pricing available — DM @kawokawok98 on X
 
 ### Live Demo
 https://python-tool--kawokawok98.replit.app
