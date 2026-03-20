@@ -1,6 +1,6 @@
 # AstroAgentTrace
 
-A simple, single-file observability tool for AI agents.
+A simple, single-file observability tool for AI agents. — perfect bolt-on for Datadog / Snowflake observability stacks. Enterprise commercial license & pricing available — DM @kawokawok98 on X
 
 Lightweight REST API • Span/trace support • Zero dependencies.
 
@@ -35,4 +35,4 @@ Basic LangChain callback support
 
  MIT licensed.
 Thanks for checking it out - tmk
-Enterprise commercial license & support available — DM @kawokawok98 on X
+
