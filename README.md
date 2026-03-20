@@ -38,5 +38,5 @@ API key auth + CORS
 Basic LangChain callback support
 
  MIT licensed.
-Thanks for checking it out - tmk
+Thanks for checking it out - Thomas
 
